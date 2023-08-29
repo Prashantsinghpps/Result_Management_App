@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ... -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style/students.css">
+</head>
+<body>
+  <%- include('header') %>
+  <div class="students">
+
+    <form action="/teachers/edit/<%= student._id %>" method="POST">
+      <label style="font-family: 'Times New Roman', Times, serif;" for="rollnumber">Roll Number:</label>
+      <input style="width: 143px;" type="number" name="rollnumber" value="<%= student.rollnumber %>" required><br>
+      <label style="font-family: 'Times New Roman', Times, serif;" for="name">Name:</label>
+      <input  type="text" name="name" value="<%= student.name %>" required><br>
+      <label style="font-family: 'Times New Roman', Times, serif;" for="dateOfBirth">Date of Birth:</label>
+      <input type="date" name="dateOfBirth" value="<%= student.dateOfBirth.toISOString().substr(0, 10) %>" required><br>
+      <label style="font-family: 'Times New Roman', Times, serif;" for="score">Score:</label>
+      <input type="number" name="score" value="<%= student.score %>" required><br>
+      <button style="font-family: 'Times New Roman', Times, serif;" class="btn btn-primary" type="submit">Update Record</button>
+      <a href="/teachers"><button type="button" style="background-color: rgb(98, 57, 233); font-family: 'Times New Roman', Times, serif;" class="btn btn-primary">Back</button></a>
+    </form>
+    
+  </div>
+  </body>
+</html>

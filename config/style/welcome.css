@@ -1,0 +1,35 @@
+
+.heading-center {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  background-color: #bfd7b4;
+  border: 2px solid  #bfd7b4;
+  /* width: 124%;
+  margin-left: -150px;
+  margin-right: 0px; */
+}
+p{
+  font-weight: bold;
+}
+.heading{
+  margin-top: 17px;
+  margin-bottom: 28px;
+font-size: 1.2em;
+}
+
+
+
+.center {
+  text-align: center;
+  padding: 110px;
+ 
+}
+button{
+  margin: 25px;
+}
+p{
+  font-weight: bold;
+}

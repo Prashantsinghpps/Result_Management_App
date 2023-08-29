@@ -1,0 +1,13 @@
+.center {
+    text-align: center;
+    background-color: #bfd7b4;
+    border: 2px solid  #bfd7b4;
+  }
+  p{
+    font-weight: bold;
+  }
+  .heading{
+    margin-top: 17px;
+    margin-bottom: 28px;
+ font-size: 1.2em;
+  }
